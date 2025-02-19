@@ -28,7 +28,7 @@ function dateSample(sampleActivity) {
   if (sample < 0) return false;
   if (sample >= 9000) return false;
 
-  return Math.ceil(Math.log(MODERN_ACTIVITY / sample) / reactionRate / HALF_LIFE_PERIOD);
+  return Math.ceil(Math.log(MODERN_ACTIVITY / sample) / (reactionRate / HALF_LIFE_PERIOD));
 }
 
 module.exports = {
