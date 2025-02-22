@@ -28,7 +28,7 @@ function encodeLine(str) {
     count += 1;
   }
 
-  return encodedStr.replace(/"1"/g, "");
+  return encodedStr;
 }
 
 module.exports = {
